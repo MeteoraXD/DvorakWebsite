@@ -3,13 +3,14 @@ import styled from "styled-components";
 const StyledMainDiv = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    padding-top: 40px ;
+    gap: 100px;
+padding: 40px ;    
 `;
 
 const TextDiv = styled.div`
  display: flex;
     flex-direction: column;
+    
 `;
 const ImagineDiv = styled.div` 
     font-weight: 600;

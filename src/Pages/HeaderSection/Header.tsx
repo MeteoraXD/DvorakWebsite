@@ -9,7 +9,7 @@ import {StyledMainDiv,
 } from './Header.styled.ts'
 import Logo from '../../assets/logo.png'
 
-function HeaderDiv () {
+const HeaderDiv = () =>  {
 
 return(
     <StyledMainDiv>
