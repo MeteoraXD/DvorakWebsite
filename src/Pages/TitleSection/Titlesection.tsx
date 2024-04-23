@@ -1,5 +1,4 @@
-import { QuoteDiv ,ImageDiv , TitleDiv} from "./Titlesection.styled.ts";
-import { TextDiv} from "../HeaderSection/Header.styled.ts";
+import { QuoteDiv ,ImageDiv , TitleDiv, TextDiv} from "./Titlesection.styled.ts";
 
 
 const TitleSection = () => {
