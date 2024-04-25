@@ -4,14 +4,13 @@ const StyledMainDiv = styled.div`
     display: flex;
     flex-direction: row;
     gap: 100px;
-padding: 40px ;    
+    padding: 40px ;    
 `;
 
 const TextDiv = styled.div`
  display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;  
     
     
 `;
