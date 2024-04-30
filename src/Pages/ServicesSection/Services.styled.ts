@@ -73,8 +73,8 @@ const OurServiceExplain = styled.div`
 `;
 
 const Divider = styled.hr`
-    color:  #808080;
-    width: 100%;
+    background-color:  #4747471a;
+    width: 90%;
 `;
 
 const GetStartedButton = styled.button`

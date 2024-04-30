@@ -4,7 +4,7 @@ const FooterDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 50px;
     background-color: #B6B6B61F;
     margin-top: 100px;
 `;
@@ -20,5 +20,6 @@ const SocialsDiv = styled.div`
 `;
 
 const InformationDiv = styled.div``;
+
 
 export {  FooterDiv , WorkingHoursDiv , SocialsDiv , InformationDiv }
