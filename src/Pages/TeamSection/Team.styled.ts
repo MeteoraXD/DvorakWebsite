@@ -27,6 +27,10 @@ const TeamCardDiv = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px; 
+@media (max-width: 850px) {
+    flex-direction: column;
+    align-items: center;
+}
 `;
 
 const MemberDiv = styled.div`

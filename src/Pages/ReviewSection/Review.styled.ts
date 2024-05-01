@@ -8,7 +8,7 @@ interface StarProps {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px;
+  padding: 1.2rem;
 `;
 
  const Title = styled.h2`
@@ -19,16 +19,20 @@ interface StarProps {
 
  const ReviewContainer = styled.div`
   width: 100%;
-  //max-width: 800px;
   display: flex;
   flex-direction: row;
-     text-align: justify-all;
+  text-align: justify-all;
   gap: 1rem;
+  
+     
+  @media (max-width: 800px) {
+   flex-direction: column;
+   
+  }
 `;
 
  const Review = styled.div`
   background: none;
-  padding: 1rem;
   border-radius: 4px;
 `;
 
