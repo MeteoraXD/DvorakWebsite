@@ -7,6 +7,7 @@ import Discover from "./Pages/DiscoverSection/Discover.tsx";
 import Team from "./Pages/TeamSection/Team.tsx";
 import Footer from "./Pages/FooterSection/Footer.tsx";
 import ContactUs from "./Pages/ContactUsSection/ContactUs.tsx";
+import ReviewSection from "./Pages/ReviewSection/Review.tsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <KnowServiceBetter/>
       <Services/>
       <Discover/>
+      <ReviewSection/>
       <Team/>
       <ContactUs/>
       <Footer/>

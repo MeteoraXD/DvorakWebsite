@@ -9,9 +9,9 @@ const MainDiv  = styled.div`
 `;
 
 const TitleDiv  = styled.div`
-        display: flex;
+    display: flex;
     flex-direction: column;
-align-items: center;
+    align-items: center;
     text-align: center;
     width: 60%;
 `;
@@ -24,6 +24,10 @@ const BoldTitleDiv = styled.div`
     margin-top: 50px;
     font-size: 80px;
     line-height: 1;
+    @media (max-width: 768px) {
+        font-size: 10vw;
+    }
+    
 `;
 
 const LogoDiv = styled.div`
@@ -33,9 +37,23 @@ const LogoDiv = styled.div`
     padding: 20px;
     background-color: black;
     margin-top: 100px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+width: 90vw  ;
+        gap: 1.3rem;
+        margin-left: 0;
+        overflow: hidden;
+    }
     
 `;
-const ServiceLogo = styled.img``;
+const ServiceLogo = styled.img`
+    cursor: pointer;
+    @media (max-width: 768px) {
+        width: 90vw  ;
+        height: auto;
+        overflow: hidden;
+    }
+`;
 
 //Second Part CSS
 
@@ -44,22 +62,35 @@ const OurServiceDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the start */
+    align-items: flex-start; 
     gap: 100px;
     padding: 40px;
-    margin-left: 30px /* Align to the center */
+    margin-left: 30px;
+
+    @media (max-width: 900px) {
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
 `;
 
 const TextButtonContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start */
-    width: 60%; /* Adjust width */
+    align-items: flex-start; 
+    width: 60%;
+    @media (max-width: 900px) {
+    font-size: 10vw;
+        width: 100%;
+    
+    }
 `;
 
 const OurServiceTitle = styled.div`
     font-weight: 600;
-    font-size: 36px; /* Reduce font size */
+    font-size: 36px;
     margin-bottom: 20px;
     white-space: nowrap;
     
@@ -69,7 +100,11 @@ const OurServiceExplain = styled.div`
     font-size: 16px;
     line-height: 1.5;
     text-align: justify;
-    margin-bottom: 20px; /* Add margin bottom for spacing */
+    margin-bottom: 20px;
+    @media (max-width: 900px) {
+        font-size: 2.5vw;
+
+    }
 `;
 
 const Divider = styled.hr`

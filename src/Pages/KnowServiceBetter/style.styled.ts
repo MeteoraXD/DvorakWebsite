@@ -1,17 +1,29 @@
 import styled from "styled-components";
 
 const StyledMainDiv = styled.div`
-    margin-top: 60px;
     display: flex;
     flex-direction: row;
     gap: 100px;
     padding: 40px;
+    margin: 300px 0;
+ @media (max-width: 768px) {
+  flex-direction: column;
+  gap: 50px;
+  
+ }
+ 
 `;
 
 const StyledTitleDiv = styled.div`
     font-weight: 600;
     font-size: 54px;
     white-space: nowrap;
+ @media (max-width: 768px) {
+  font-size: 6vw;
+  margin-bottom: 0;
+  
+
+ }
 `;
 
 const TextButtonContainer = styled.div`

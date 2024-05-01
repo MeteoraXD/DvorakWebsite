@@ -6,11 +6,23 @@ import styled from "styled-components";
      align-items: center;
      padding: 40px;
      gap: 100px;
+    margin: 300px 0;
+  @media (max-width: 900px) {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 20px;
+   padding: 20px;
+  }
+  
  `;
 
  const  TitleButtonDiv = styled.div`
-    width: 60%;
+    width: 50%;
      line-height: 1;
+  @media (max-width: 900px) {
+   width: 80%;
+  }
  `;
 
  const DiscoverDiv = styled.div`
@@ -31,8 +43,9 @@ import styled from "styled-components";
  const QuoteDiv = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start */
-  width: 60%;
+  align-items: flex-start; 
+  text-align: justify;
+  width: 80%;
  `;
 
  const ParaphraseDiv = styled.div`

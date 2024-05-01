@@ -131,9 +131,18 @@ const MapContent = styled.div`
 `;
 
 const VisitUsSection = styled.div`
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
         
 `;
-const GetInTouchSection = styled.div``;
+const GetInTouchSection = styled.div`
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+`;
 
 export {
     ContactUsWrapper,

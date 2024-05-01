@@ -1,6 +1,15 @@
 import { GetStartedButton, Divider, OurServiceDiv, TextButtonContainer, OurServiceExplain, OurServiceTitle } from './Services.styled';
 
 const OurServices = () => {
+
+    const scrollToContactUs = () => {
+        const contactUsSection = document.getElementById('ContactUs');
+        if (contactUsSection) {
+            contactUsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+
     return (
         <>
             <OurServiceDiv>
@@ -9,8 +18,7 @@ const OurServices = () => {
                 </OurServiceTitle>
                 <TextButtonContainer>
                     <OurServiceExplain>Even the finest idea for a digital project has to focus not only on the technical details but also on the visual aspect. Our team assembled to focus on your product’s design will hold a few meetings with you to set goals and establish a clear direction for your product and ensure it is attractive to users. We also offer 2 months of Ui/Ux design course which will make you capable enough to land job as designers so please contact our office for further details.</OurServiceExplain>
-                    <GetStartedButton>Get started →</GetStartedButton>
-                </TextButtonContainer>
+                    <GetStartedButton onClick={scrollToContactUs}>Get started →</GetStartedButton>                </TextButtonContainer>
             </OurServiceDiv>
             <Divider />
             <OurServiceDiv>
