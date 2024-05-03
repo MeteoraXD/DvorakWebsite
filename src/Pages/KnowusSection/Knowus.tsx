@@ -213,7 +213,7 @@ const KnowUs = () => {
                 </PictureSection>
             </Services>
         </Container>
-    );
+    )
 };
 
 export default KnowUs;
