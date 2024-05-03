@@ -48,11 +48,11 @@ import styled from "styled-components";
   width: 80%;
  `;
 
- const ParaphraseDiv = styled.div`
+ const ClientLogoDiv = styled.div`
     font-size: 16px;
  `;
 
 
 
 
-export { MainDiv , ParaphraseDiv , DiscoverDiv , QuoteDiv , ButtonSection, TitleButtonDiv };
+export { MainDiv , ClientLogoDiv , DiscoverDiv , QuoteDiv , ButtonSection, TitleButtonDiv };

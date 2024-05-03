@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainDiv  = styled.div`
+const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -8,12 +8,11 @@ const MainDiv  = styled.div`
     margin-top: 140px;
 `;
 
-const TitleDiv  = styled.div`
+const TitleDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 60%;
 `;
 
 const SmallTitleDiv = styled.div`
@@ -24,34 +23,33 @@ const BoldTitleDiv = styled.div`
     margin-top: 50px;
     font-size: 80px;
     line-height: 1;
+    width: 60%;
     @media (max-width: 768px) {
         font-size: 10vw;
     }
-    
 `;
 
 const LogoDiv = styled.div`
     display: flex;
-    flex-direction: row;
-    gap : 50px ;
+    justify-content: center; /* Align logos horizontally center */
+    gap: 50px;
     padding: 20px;
     background-color: black;
+    width: 100%; 
     margin-top: 100px;
     overflow: hidden;
     @media (max-width: 768px) {
-width: 90vw  ;
         gap: 1.3rem;
-        margin-left: 0;
         overflow: hidden;
     }
-    
 `;
 const ServiceLogo = styled.img`
     cursor: pointer;
+    height: 80px;
+    width: 80px;
+
     @media (max-width: 768px) {
-        width: 90vw  ;
         height: auto;
-        overflow: hidden;
     }
 `;
 
@@ -62,29 +60,27 @@ const OurServiceDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 100px;
     padding: 40px;
     margin-left: 30px;
 
     @media (max-width: 900px) {
-    display: flex;
+        display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
-
 `;
 
 const TextButtonContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
     width: 60%;
     @media (max-width: 900px) {
-    font-size: 10vw;
+        font-size: 10vw;
         width: 100%;
-    
     }
 `;
 
@@ -93,7 +89,6 @@ const OurServiceTitle = styled.div`
     font-size: 36px;
     margin-bottom: 20px;
     white-space: nowrap;
-    
 `;
 
 const OurServiceExplain = styled.div`
@@ -103,12 +98,11 @@ const OurServiceExplain = styled.div`
     margin-bottom: 20px;
     @media (max-width: 900px) {
         font-size: 2.5vw;
-
     }
 `;
 
 const Divider = styled.hr`
-    background-color:  #4747471a;
+    background-color: #4747471a;
     width: 90%;
 `;
 
@@ -121,5 +115,17 @@ const GetStartedButton = styled.button`
     margin-top: 20px;
 `;
 
-
-export { MainDiv, TitleDiv, Divider ,SmallTitleDiv, BoldTitleDiv , TextButtonContainer , LogoDiv , ServiceLogo , OurServiceDiv , OurServiceTitle , OurServiceExplain , GetStartedButton};
+export {
+    MainDiv,
+    TitleDiv,
+    Divider,
+    SmallTitleDiv,
+    BoldTitleDiv,
+    TextButtonContainer,
+    LogoDiv,
+    ServiceLogo,
+    OurServiceDiv,
+    OurServiceTitle,
+    OurServiceExplain,
+    GetStartedButton,
+};

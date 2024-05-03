@@ -6,14 +6,13 @@ const ImageDiv = styled.div`
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     @media (max-width: 768px) {
-        height: 40vh; /* Adjust as needed */
+        height: 40vh;
     }
 `;
 
@@ -35,7 +34,7 @@ const TitleDiv = styled.div`
 `;
 
 const QuoteDiv = styled.div`
-    font-size: 1vw; /* Adjust as needed */
+    font-size: 1vw;
     display: flex;
     align-content: center;
     justify-content: center;

@@ -7,7 +7,7 @@ const StyledMainDiv = styled.div`
     padding: 5vw;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         flex-direction: row;
         align-items: center;
     }
@@ -21,24 +21,27 @@ const TextDiv = styled.div`
 
 const ImagineDiv = styled.div`
     font-weight: 600;
-    font-size: 8vw;
+    font-size: 92px;  
     line-height: 1;
+    width : 75%;
     .del {
         font-weight: bold;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         font-size: 10vw;
+        width: 100%;
     }
 `;
 
 const ParaphraseDiv = styled.div`
-    font-size: 1.5vw;
+    font-size: 1vw;
     padding: 2vw 0;
     text-align: justify;
+    width: 85%;
 
     @media (max-width: 768px) {
-        font-size: 3vw;
+        font-size: 2vw;
         padding: 4vw 0;
     }
 `;
