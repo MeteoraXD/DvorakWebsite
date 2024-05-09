@@ -30,15 +30,6 @@ const DiscoverDiv = styled.div`
   margin-bottom: 20px;
 `;
 
-const ButtonSection = styled.button`
-  width: 100px;
-  height: 60px;
-  background-color: black;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-`;
-
 const QuoteDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,13 +40,14 @@ const QuoteDiv = styled.div`
 
 const ClientLogoDiv = styled.div`
   font-size: 16px;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 15px;
+  flex-wrap: wrap;
 `;
 
-export {
-  MainDiv,
-  ClientLogoDiv,
-  DiscoverDiv,
-  QuoteDiv,
-  ButtonSection,
-  TitleButtonDiv,
-};
+export { MainDiv, ClientLogoDiv, DiscoverDiv, QuoteDiv, TitleButtonDiv };

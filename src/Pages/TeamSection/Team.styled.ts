@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MainTeamDiv = styled.div`
   width: 100%;
-  margin: 100px 0;
+  margin: 250px 0;
 `;
 
 const TeamTitleDiv = styled.div`
@@ -25,6 +25,7 @@ const Quote = styled.div`
 const TeamCardDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
 
@@ -34,15 +35,53 @@ const TeamCardDiv = styled.div`
   }
 `;
 
+const ExpandButton = styled.button`
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+`;
+
+const MemberButtonContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    ${ExpandButton} {
+      visibility: visible;
+    }
+  }
+`;
+
+const MemberContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+`;
+const HiddenContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+`;
+
 const MemberDiv = styled.div`
   width: 100%;
   max-width: 300px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 40px; 
 
-  @media (max-width: 850px) {
-    max-width: none;
-  }
+  @media (max-width: 1200px) {
+    max-width: 25%;
 `;
 
 const PhotoDiv = styled.img`
@@ -67,8 +106,12 @@ export {
   Title,
   Quote,
   TeamCardDiv,
+  MemberButtonContainer,
+  MemberContainer,
   MemberDiv,
   PhotoDiv,
   NameDiv,
   RoleDiv,
+  ExpandButton,
+  HiddenContainer,
 };

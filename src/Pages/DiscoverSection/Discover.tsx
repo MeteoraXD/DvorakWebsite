@@ -4,28 +4,38 @@ import {
   QuoteDiv,
   ClientLogoDiv,
   DiscoverDiv,
-  ButtonSection,
 } from "./Discover.styled.ts";
-
+import { ServiceLogo } from "../ServicesSection/Services.styled.ts";
+import SlackLogo from "../../assets/ServiceLogo/slacklogo.svg";
+import PythonLogo from "../../assets/ServiceLogo/pythonglogo.svg";
+import ReactLogo from "../../assets/ServiceLogo/reactlogo.svg";
+import FlutterLogo from "../../assets/ServiceLogo/flutterlofo.svg";
+import ClickUpLogo from "../../assets/ServiceLogo/clickuplogo.svg";
+import Aws from "../../assets/ServiceLogo/aws-brown.svg";
+import Pytorch from "../../assets/ServiceLogo/pytorch-brown.svg";
+import GoogleCloud from "../../assets/ServiceLogo/gcp-brown.svg";
+import TensorFlow from "../../assets/ServiceLogo/tensorflow-brown.svg";
+import Mongodb from "../../assets/ServiceLogo/mongo-brown.svg";
+import FigmaLogo from "../../assets/ServiceLogo/figmalogo.svg";
 const Discover = () => {
   return (
     <MainDiv>
       <TitleButtonDiv>
         <DiscoverDiv>Our Trusted Clients</DiscoverDiv>
-        <ButtonSection>Get Started</ButtonSection>
       </TitleButtonDiv>
       <QuoteDiv>
         <ClientLogoDiv>
-          Welcome to a world of limitless possibilities, where the journey is as
-          exhilarating as the destination, and where every moment is an
-          opportunity to make your mark on the canvas of existence. The only
-          limit is the extent of your imagination.
-        </ClientLogoDiv>
-        <ClientLogoDiv>
-          {" "}
-          Navigating life’s intricate fabric, choices unfold paths to the
-          extraordinary, demanding creativity, curiosity, and courage for a
-          truly fulfilling journey.
+          <ServiceLogo src={SlackLogo} />
+          <ServiceLogo src={PythonLogo} />
+          <ServiceLogo src={ReactLogo} />
+          <ServiceLogo src={FlutterLogo} />
+          <ServiceLogo src={Aws} />
+          <ServiceLogo src={GoogleCloud} />
+          <ServiceLogo src={TensorFlow} />
+          <ServiceLogo src={FigmaLogo} />
+          <ServiceLogo src={Mongodb} />
+          <ServiceLogo src={Pytorch} />
+          <ServiceLogo src={ClickUpLogo} />
         </ClientLogoDiv>
       </QuoteDiv>
     </MainDiv>

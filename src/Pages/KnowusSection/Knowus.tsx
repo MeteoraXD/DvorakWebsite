@@ -72,14 +72,14 @@ const KnowUs = () => {
             <ProjectDescription>
               <Picture src={PlaceholderPicture} />
               <ProjectDescriptioncontainer>
-                <ProjectName>A</ProjectName>
+                <ProjectName>Hotel Mountain View</ProjectName>
                 <ProjectDomain>www.abc.com</ProjectDomain>
               </ProjectDescriptioncontainer>
             </ProjectDescription>
             <ProjectDescription>
               <Picture src={PlaceholderPicture} />
               <ProjectDescriptioncontainer>
-                <ProjectName>A</ProjectName>
+                <ProjectName>Hotel Snow Peak</ProjectName>
                 <ProjectDomain>www.abc.com</ProjectDomain>
               </ProjectDescriptioncontainer>
             </ProjectDescription>

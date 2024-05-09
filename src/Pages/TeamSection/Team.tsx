@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   MainTeamDiv,
   TeamTitleDiv,
@@ -8,9 +9,20 @@ import {
   PhotoDiv,
   NameDiv,
   RoleDiv,
-} from "./Team.styled.ts";
+  ExpandButton,
+  MemberButtonContainer,
+  MemberContainer,
+  HiddenContainer,
+} from "./Team.styled";
 import Picture from "../../assets/pfp.jpg";
+
 const Team = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleExpand = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <MainTeamDiv>
       <TeamTitleDiv>
@@ -23,58 +35,70 @@ const Team = () => {
       </TeamTitleDiv>
 
       <TeamCardDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Eng. Bishnu Sharma </NameDiv>
-          <RoleDiv>Technical Lead (CF)</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Dhiraj Pahari</NameDiv>
-          <RoleDiv> Executive Head (CF) </RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Sushish Baral</NameDiv>
-          <RoleDiv> Data Scientist (CF)</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Milan Gurung</NameDiv>
-          <RoleDiv>Front-end Developer</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Gaurav Acharya</NameDiv>
-          <RoleDiv>Back-end Developer</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Milan Tilija</NameDiv>
-          <RoleDiv>Mobile Developer</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Prabin Gurung</NameDiv>
-          <RoleDiv>UI/UX</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Navaraj</NameDiv>
-          <RoleDiv>Intern (FrontEnd)</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Megha Gurung</NameDiv>
-          <RoleDiv>Intern (FrontEnd)</RoleDiv>
-        </MemberDiv>
-        <MemberDiv>
-          <PhotoDiv src={Picture} />
-          <NameDiv>Sahaz Gurung</NameDiv>
-          <RoleDiv>Intern (Graphics Designer)</RoleDiv>
-        </MemberDiv>
+        <MemberButtonContainer>
+          <MemberContainer>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Eng. Bishnu Sharma</NameDiv>
+              <RoleDiv>Technical Lead (CF)</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Dhiraj Pahari</NameDiv>
+              <RoleDiv>Executive Head (CF)</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Sushish Baral</NameDiv>
+              <RoleDiv>Data Scientist (CF)</RoleDiv>
+            </MemberDiv>
+          </MemberContainer>
+        </MemberButtonContainer>
+        {expanded && (
+          <HiddenContainer>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Milan Gurung</NameDiv>
+              <RoleDiv>Front-end Developer</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Gaurav Acharya</NameDiv>
+              <RoleDiv>Back-end Developer</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Milan Tilija</NameDiv>
+              <RoleDiv>Mobile Developer</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Prabin Gurung</NameDiv>
+              <RoleDiv>UI/UX</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Navaraj</NameDiv>
+              <RoleDiv>Intern (FrontEnd)</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Megha Gurung</NameDiv>
+              <RoleDiv>Intern (FrontEnd)</RoleDiv>
+            </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Sahaz Gurung</NameDiv>
+              <RoleDiv>Intern (Graphics Designer)</RoleDiv>
+            </MemberDiv>
+          </HiddenContainer>
+        )}
+        <ExpandButton onClick={handleExpand}>
+          {expanded ? "Collapse" : "Expand"}
+        </ExpandButton>
       </TeamCardDiv>
     </MainTeamDiv>
   );
 };
+
 export default Team;

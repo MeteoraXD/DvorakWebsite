@@ -30,8 +30,10 @@ const ReviewContainer = styled.div`
 `;
 
 const Review = styled.div`
-  background: none;
+  background: #e4e4e4;
   border-radius: 4px;
+  border: 2px solid #e4e4e4;
+  padding: 10px;
 `;
 
 const ReviewText = styled.p`

@@ -4,8 +4,9 @@ const StyledMainDiv = styled.div`
   display: flex;
   flex-direction: row;
   gap: 5vw;
-  padding-top: 15vw !important;
-  padding: 7vw;
+  padding-top: 9vw !important;
+  padding-bottom: 9vw !important;
+  padding: 0 7vw;
   justify-content: space-between;
 
   @media (max-width: 900px) {
