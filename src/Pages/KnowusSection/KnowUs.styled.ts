@@ -19,6 +19,7 @@ const ProjectsPicture = styled.div`
   align-items: start;
   gap: 30px;
   padding-top: 10px;
+  transition: height 1s ease;
 `;
 const PictureSection = styled.div`
   width: 100%;
@@ -28,11 +29,11 @@ const PictureSection = styled.div`
   padding: 20px;
   gap: 20px;
   cursor: pointer;
-  transition: 0.5s ease-out;
+  transition: 1s ease-out;
 
   &:hover {
     ${ProjectsPicture} {
-      height: 100%;
+      height: auto;
     }
     ${ProjectDescription} {
       transition: all 1s ease;
@@ -48,7 +49,7 @@ const PictureSection = styled.div`
 const Picture = styled.img`
   height: 10vw;
   width: 10vw;
-  flex-shrink: 0; /* Prevent the image from shrinking */
+  flex-shrink: 0;
 
   @media (min-width: 768px) {
     height: 50px;

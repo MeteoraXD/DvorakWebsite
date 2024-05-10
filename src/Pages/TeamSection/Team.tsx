@@ -15,6 +15,8 @@ import {
   HiddenContainer,
 } from "./Team.styled";
 import Picture from "../../assets/pfp.jpg";
+import UpArrow from "../../assets/uparrow.svg";
+import DownArrow from "../../assets/downarrow.svg";
 
 const Team = () => {
   const [expanded, setExpanded] = useState(false);
@@ -94,7 +96,11 @@ const Team = () => {
           </HiddenContainer>
         )}
         <ExpandButton onClick={handleExpand}>
-          {expanded ? "Collapse" : "Expand"}
+          {expanded ? (
+            <img src={UpArrow} alt="up" />
+          ) : (
+            <img src={DownArrow} alt="down" />
+          )}{" "}
         </ExpandButton>
       </TeamCardDiv>
     </MainTeamDiv>

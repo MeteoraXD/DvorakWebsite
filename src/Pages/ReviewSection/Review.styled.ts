@@ -6,13 +6,12 @@ interface StarProps {
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 1.2rem;
+  padding: 50px;
+  align-items: center;
 `;
 
 const Title = styled.h2`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   font-weight: 600;
   font-size: 36px;
 `;
@@ -20,12 +19,13 @@ const Title = styled.h2`
 const ReviewContainer = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: row;
-  text-align: justify-all;
-  gap: 1rem;
+  flex-direction: row !important;
+  text-align: justify;
+  align-items: flex-start;
 
   @media (max-width: 800px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -34,6 +34,9 @@ const Review = styled.div`
   border-radius: 4px;
   border: 2px solid #e4e4e4;
   padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  width: 80%;
 `;
 
 const ReviewText = styled.p`
@@ -55,6 +58,7 @@ const Star = styled.span<StarProps>`
   color: ${(props) => (props.filled ? "black" : "lightgray")};
   font-size: 36px;
 `;
+
 export {
   Container,
   Title,
