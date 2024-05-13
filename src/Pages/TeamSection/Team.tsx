@@ -13,7 +13,7 @@ import {
   MemberButtonContainer,
   MemberContainer,
   HiddenContainer,
-} from "./Team.styled";
+} from "./Team.styled"; // Import your styled components here
 import Picture from "../../assets/pfp.jpg";
 import UpArrow from "../../assets/uparrow.svg";
 import DownArrow from "../../assets/downarrow.svg";
@@ -57,7 +57,7 @@ const Team = () => {
           </MemberContainer>
         </MemberButtonContainer>
         {expanded && (
-          <HiddenContainer>
+          <HiddenContainer className={expanded ? "expanded" : "collapsed"}>
             <MemberDiv>
               <PhotoDiv src={Picture} />
               <NameDiv>Milan Gurung</NameDiv>

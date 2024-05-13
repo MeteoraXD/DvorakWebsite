@@ -12,6 +12,7 @@ import {
   Picture,
   ProjectsPicture,
   HeaderPicture,
+  OverlayDiv,
 } from "./KnowUs.styled";
 
 import Revel from "../../assets/OurServicesPicture/crowd.jpg";
@@ -27,6 +28,8 @@ const KnowUs = () => {
       <Services>
         <PictureSection>
           <HeaderPictureContainer>
+            <OverlayDiv />
+
             <HeaderPicture src={Revel} />
             <PictureText>Revel</PictureText>
           </HeaderPictureContainer>
@@ -64,6 +67,7 @@ const KnowUs = () => {
         </PictureSection>
         <PictureSection>
           <HeaderPictureContainer>
+            <OverlayDiv />
             <HeaderPicture src={Hospitality} />
             <PictureText>Hospitality</PictureText>
           </HeaderPictureContainer>
@@ -101,6 +105,8 @@ const KnowUs = () => {
         </PictureSection>
         <PictureSection>
           <HeaderPictureContainer>
+            <OverlayDiv />
+
             <HeaderPicture src={RealEstate} />
             <PictureText>RealEstate</PictureText>
           </HeaderPictureContainer>
@@ -138,6 +144,7 @@ const KnowUs = () => {
         </PictureSection>
         <PictureSection>
           <HeaderPictureContainer>
+            <OverlayDiv />
             <HeaderPicture src={Academics} />
             <PictureText>Academics</PictureText>
           </HeaderPictureContainer>

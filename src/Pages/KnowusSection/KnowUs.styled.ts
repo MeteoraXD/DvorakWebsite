@@ -1,4 +1,42 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeInOverlay = keyframes`
+  0% {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 20%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0) 100%
+    ) no-repeat;
+    background-size: 100% 100%;
+  }
+  100% {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+  }
+`;
+
+const OverlayDiv = styled.div`
+  height: 0;
+  width: 300px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0) 100%
+    )
+    no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 1;
+  transition: height 1s ease-out;
+  animation: ${fadeInOverlay} 1s ease-out;
+`;
 
 const HeaderPictureContainer = styled.div`
   position: relative;
@@ -29,8 +67,7 @@ const PictureSection = styled.div`
   padding: 20px;
   gap: 20px;
   cursor: pointer;
-  transition: 1s ease-out;
-
+  transition: background-color 1s ease-out;
   &:hover {
     ${ProjectsPicture} {
       height: auto;
@@ -38,6 +75,14 @@ const PictureSection = styled.div`
     ${ProjectDescription} {
       transition: all 1s ease;
       opacity: 1;
+    }
+    ${OverlayDiv} {
+      height: 400px;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
     }
   }
 
@@ -138,4 +183,5 @@ export {
   HeaderPicture,
   ProjectsPicture,
   HeaderPictureContainer,
+  OverlayDiv,
 };

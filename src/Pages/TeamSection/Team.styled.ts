@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const expandAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const MainTeamDiv = styled.div`
   width: 100%;
@@ -50,12 +61,6 @@ const MemberButtonContainer = styled.div`
   position: relative;
   flex-direction: column;
   align-items: center;
-
-  &:hover {
-    ${ExpandButton} {
-      visibility: visible;
-    }
-  }
 `;
 
 const MemberContainer = styled.div`
@@ -66,22 +71,27 @@ const MemberContainer = styled.div`
   width: 100%;
   margin-bottom: 30px;
 `;
+
 const HiddenContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: ${expandAnimation} 0.5s ease-in-out forwards;
 `;
 
 const MemberDiv = styled.div`
   width: 100%;
   max-width: 300px;
   text-align: center;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 
   @media (max-width: 1200px) {
     max-width: 25%;
+  }
 `;
 
 const PhotoDiv = styled.img`

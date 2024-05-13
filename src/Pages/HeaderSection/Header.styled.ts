@@ -4,7 +4,7 @@ const StyledMainDiv = styled.div`
   display: flex;
   flex-direction: row;
   gap: 5vw;
-  padding-top: 9vw !important;
+  padding-top: 7vw !important;
   padding-bottom: 9vw !important;
   padding: 0 7vw;
   justify-content: space-between;
