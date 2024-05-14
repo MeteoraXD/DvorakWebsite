@@ -6,6 +6,10 @@ const MainDiv = styled.div`
   text-align: center;
   align-items: center;
   margin-top: 140px;
+
+  @media (max-width: 768px) {
+    margin-top: 80px;
+  }
 `;
 
 const TitleDiv = styled.div`
@@ -17,6 +21,10 @@ const TitleDiv = styled.div`
 
 const SmallTitleDiv = styled.div`
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const BoldTitleDiv = styled.div`
@@ -25,8 +33,18 @@ const BoldTitleDiv = styled.div`
   font-size: 80px;
   line-height: 1;
   width: 60%;
+  white-space: pre-wrap;
+
   @media (max-width: 768px) {
-    font-size: 10vw;
+    font-size: 7vw;
+    width: 60%;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 6vw;
+    white-space: normal;
+    width: 60%;
   }
 `;
 
@@ -39,9 +57,11 @@ const LogoDiv = styled.div`
   width: 100%;
   margin-top: 100px;
   overflow-x: auto !important;
+
   @media (max-width: 768px) {
-    gap: 1.3rem;
-    overflow-x: auto !important;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 50px;
   }
 `;
 
@@ -51,7 +71,8 @@ const ServiceLogo = styled.img`
   width: 80px;
 
   @media (max-width: 768px) {
-    height: auto;
+    height: 50px;
+    width: 50px;
   }
 `;
 
