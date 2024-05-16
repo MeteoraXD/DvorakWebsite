@@ -1,7 +1,7 @@
 import {
   MainDiv,
-  TitleButtonDiv,
-  QuoteDiv,
+  TitleDiv,
+  ClientLogoContainer,
   ClientLogoDiv,
   DiscoverDiv,
 } from "./Discover.styled.ts";
@@ -67,10 +67,10 @@ const Discover = () => {
 
   return (
     <MainDiv>
-      <TitleButtonDiv>
+      <TitleDiv>
         <DiscoverDiv>Our Trusted Clients</DiscoverDiv>
-      </TitleButtonDiv>
-      <QuoteDiv>
+      </TitleDiv>
+      <ClientLogoContainer>
         <ClientLogoDiv>
           {logos.map((logo, index) => (
             <ServiceLogo
@@ -81,7 +81,7 @@ const Discover = () => {
             />
           ))}
         </ClientLogoDiv>
-      </QuoteDiv>
+      </ClientLogoContainer>
     </MainDiv>
   );
 };

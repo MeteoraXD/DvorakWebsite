@@ -13,7 +13,7 @@ const expandAnimation = keyframes`
 
 const MainTeamDiv = styled.div`
   width: 100%;
-  margin: 250px 0;
+  margin: 150px 0;
 `;
 
 const TeamTitleDiv = styled.div`
@@ -35,12 +35,12 @@ const Quote = styled.div`
 
 const TeamCardDiv = styled.div`
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 
   @media (max-width: 850px) {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -56,7 +56,7 @@ const ExpandButton = styled.button`
 
 const MemberButtonContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   position: relative;
   flex-direction: column;
@@ -70,6 +70,12 @@ const MemberContainer = styled.div`
   gap: 40px;
   width: 100%;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const HiddenContainer = styled.div`
@@ -81,6 +87,11 @@ const HiddenContainer = styled.div`
   opacity: 0;
   transform: translateY(-20px);
   animation: ${expandAnimation} 0.5s ease-in-out forwards;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const MemberDiv = styled.div`
@@ -88,10 +99,6 @@ const MemberDiv = styled.div`
   max-width: 300px;
   text-align: center;
   margin-bottom: 40px;
-
-  @media (max-width: 1200px) {
-    max-width: 25%;
-  }
 `;
 
 const PhotoDiv = styled.img`
@@ -99,6 +106,7 @@ const PhotoDiv = styled.img`
   width: 150px;
   border-radius: 50%;
   margin-bottom: 15px;
+  object-fit: cover;
 `;
 
 const NameDiv = styled.div`
@@ -125,4 +133,3 @@ export {
   ExpandButton,
   HiddenContainer,
 };
-``;

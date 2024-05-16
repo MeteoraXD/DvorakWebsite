@@ -51,6 +51,14 @@ const ReviewSection = () => {
             dynamicBullets: true,
           }}
           modules={[Pagination, Autoplay]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            900: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index}>

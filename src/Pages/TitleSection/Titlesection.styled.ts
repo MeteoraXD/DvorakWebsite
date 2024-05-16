@@ -4,7 +4,6 @@ import BackgroundImage from "../../assets/background.jpeg";
 const ImageDiv = styled.div`
   background-image: url(${BackgroundImage});
   background-size: cover;
-
   background-position: center;
   width: 100%;
   height: 100vh;

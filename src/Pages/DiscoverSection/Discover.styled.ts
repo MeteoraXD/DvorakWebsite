@@ -8,19 +8,18 @@ const MainDiv = styled.div`
   gap: 100px;
   margin: 300px 0;
   @media (max-width: 900px) {
-    display: flex;
     flex-direction: column;
-    align-items: start;
+
     gap: 20px;
-    padding: 20px;
   }
 `;
 
-const TitleButtonDiv = styled.div`
+const TitleDiv = styled.div`
   width: 50%;
   line-height: 1;
   @media (max-width: 900px) {
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
 `;
 
@@ -28,14 +27,21 @@ const DiscoverDiv = styled.div`
   font-weight: 600;
   font-size: 54px;
   margin-bottom: 20px;
+  @media (max-width: 450px) {
+    font-size: 8vw;
+  }
 `;
 
-const QuoteDiv = styled.div`
+const ClientLogoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: justify;
   width: 80%;
+  @media (max-width: 900px) {
+    align-items: center;
+    width: 60%;
+  }
 `;
 
 const ClientLogoDiv = styled.div`
@@ -48,6 +54,7 @@ const ClientLogoDiv = styled.div`
   gap: 30px;
   padding: 15px;
   flex-wrap: wrap;
+  overflow: auto;
 `;
 
-export { MainDiv, ClientLogoDiv, DiscoverDiv, QuoteDiv, TitleButtonDiv };
+export { MainDiv, ClientLogoDiv, DiscoverDiv, ClientLogoContainer, TitleDiv };

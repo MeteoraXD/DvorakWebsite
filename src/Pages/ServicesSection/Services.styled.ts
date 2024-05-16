@@ -36,8 +36,8 @@ const BoldTitleDiv = styled.div`
   white-space: pre-wrap;
 
   @media (max-width: 768px) {
-    font-size: 7vw;
-    width: 60%;
+    font-size: 8vw;
+    width: 80%;
     margin-top: 30px;
   }
 
@@ -59,6 +59,8 @@ const LogoDiv = styled.div`
   overflow-x: auto !important;
 
   @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
     margin-top: 50px;
@@ -92,7 +94,8 @@ const OurServiceDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
+    margin-left: 20px;
   }
 `;
 
@@ -102,7 +105,7 @@ const TextButtonContainer = styled.div`
   align-items: flex-start;
   width: 60%;
   @media (max-width: 900px) {
-    font-size: 10vw;
+    font-size: 8vw;
     width: 100%;
   }
 `;
@@ -112,6 +115,9 @@ const OurServiceTitle = styled.div`
   font-size: 36px;
   margin-bottom: 20px;
   white-space: nowrap;
+  @media (max-width: 450px) {
+    font-size: 8vw;
+  }
 `;
 
 const OurServiceExplain = styled.div`
@@ -120,7 +126,8 @@ const OurServiceExplain = styled.div`
   text-align: justify;
   margin-bottom: 20px;
   @media (max-width: 900px) {
-    font-size: 2.5vw;
+    font-size: 3vw;
+    width: 90%;
   }
 `;
 

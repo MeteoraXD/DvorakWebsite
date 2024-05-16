@@ -8,7 +8,7 @@ const ContactUsWrapper = styled.div`
   padding: 100px;
   margin: 15vh 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1400px) {
     flex-direction: column;
     align-items: start;
     padding: 50px;
@@ -27,6 +27,7 @@ const ContactFormSection = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    margin-bottom: 50px;
 
     h2 {
       font-size: 10vw;
@@ -129,16 +130,23 @@ const SubmitButton = styled.button`
 `;
 
 const MapSection = styled.div`
-  height: 400px;
+  height: auto;
+  max-height: 300px;
   display: flex;
   flex-direction: column;
 
   iframe {
     border: none;
+    max-width: 100%;
   }
 
   @media (max-width: 1400px) {
-    height: 300px; /* Decrease height when screen width is below 1400px */
+    height: calc(100vh - 800px);
+    max-height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 600px);
   }
 `;
 
@@ -149,6 +157,9 @@ const MapContent = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 `;
 
@@ -156,6 +167,10 @@ const VisitUsSection = styled.div`
   h3 {
     font-size: 3vh;
     font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 5vw;
+      font-weight: 600;
+    }
   }
 `;
 
@@ -163,6 +178,10 @@ const GetInTouchSection = styled.div`
   h3 {
     font-size: 3vh;
     font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 5vw;
+      font-weight: 600;
+    }
   }
 `;
 

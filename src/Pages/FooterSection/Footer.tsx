@@ -17,7 +17,9 @@ const Footer = () => {
         <h1>Social</h1>
         <a href={"https://www.facebook.com/dvorakinnovation"}>Facebook</a>
         <a href={"https://www.instagram.com/dvorakinnovation/"}>Instagram</a>
-        <a href={"https://www.instagram.com/dvorakinnovation/"}>Tiktok</a>
+        <a href={"https://www.linkedin.com/company/dvorak-innovation/"}>
+          Linkedin
+        </a>
       </SocialsDiv>
       <InformationDiv>
         <h1>Dvorak Innovation Pvt Ltd</h1>

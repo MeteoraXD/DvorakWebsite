@@ -2,20 +2,20 @@ import styled from "styled-components";
 
 const FooterDiv = styled.div`
   display: flex;
-  justify-content: center; 
-  padding: 20px 100px; 
+  justify-content: center;
+  padding: 20px 100px;
   background-color: #b6b6b61f;
-  margin-top: 100px;
+  margin-top: 200px;
 
-  @media (max-width: 768px) {
-    margin-top: 50px;
+  @media (max-width: 1400px) {
+    margin-top: 450px;
+    padding: 20px 20px;
     flex-direction: column;
-    align-items: center; 
   }
 
   @media (min-width: 768px) {
-    justify-content: space-between; /
-    align-items: flex-start; 
+    justify-content: space-between;
+    align-items: flex-start;
   }
 `;
 
@@ -28,7 +28,7 @@ const WorkingHoursDiv = styled.div`
   }
 
   @media (min-width: 768px) {
-    text-align: left;
+    text-align: start;
     margin-bottom: 0;
   }
 `;
@@ -54,13 +54,14 @@ const SocialsDiv = styled.div`
 
 const InformationDiv = styled.div`
   text-align: center;
+
   h1 {
     font-weight: 550;
     font-size: 24px;
   }
 
   @media (min-width: 768px) {
-    text-align: left;
+    align-items: start;
   }
 `;
 
