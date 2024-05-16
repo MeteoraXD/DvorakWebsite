@@ -6,13 +6,16 @@ const ContactUsWrapper = styled.div`
   align-items: center;
   font-family: Arial, sans-serif;
   padding: 100px;
-  margin: 15vh 0;
-
+  margin: 20vh 0;
   @media (max-width: 1400px) {
     flex-direction: column;
     align-items: start;
     padding: 50px;
     margin-bottom: 50px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 100px;
   }
 `;
 
@@ -138,15 +141,6 @@ const MapSection = styled.div`
   iframe {
     border: none;
     max-width: 100%;
-  }
-
-  @media (max-width: 1400px) {
-    height: calc(100vh - 800px);
-    max-height: 400px;
-  }
-
-  @media (max-width: 768px) {
-    height: calc(100vh - 600px);
   }
 `;
 

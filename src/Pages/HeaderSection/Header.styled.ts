@@ -37,13 +37,13 @@ const ImagineDiv = styled.div`
 `;
 
 const ParaphraseDiv = styled.div`
-  font-size: 1vw;
+  font-size: 2.5vw;
   padding: 2vw 0;
   text-align: justify;
   width: 85%;
 
   @media (max-width: 768px) {
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 4vw 0;
   }
 `;
@@ -58,9 +58,9 @@ const ExploreButton = styled.button`
   font-size: 1vw;
 
   @media (max-width: 768px) {
-    width: 15vw;
+    width: 16vw;
     height: 8vw;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 `;
 

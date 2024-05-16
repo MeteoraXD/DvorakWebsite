@@ -5,12 +5,13 @@ const FooterDiv = styled.div`
   justify-content: center;
   padding: 20px 100px;
   background-color: #b6b6b61f;
-  margin-top: 200px;
+  margin-top: 450px;
 
-  @media (max-width: 1400px) {
-    margin-top: 450px;
-    padding: 20px 20px;
+  @media (max-width: 767px) {
+    margin-top: 550px;
+    padding: 20px;
     flex-direction: column;
+    align-items: center;
   }
 
   @media (min-width: 768px) {
@@ -31,6 +32,11 @@ const WorkingHoursDiv = styled.div`
     text-align: start;
     margin-bottom: 0;
   }
+
+  @media (max-width: 767px) {
+    align-items: center; /* Center align on small screens */
+    text-align: center;
+  }
 `;
 
 const SocialsDiv = styled.div`
@@ -50,6 +56,11 @@ const SocialsDiv = styled.div`
     align-items: flex-start;
     margin-bottom: 0;
   }
+
+  @media (max-width: 767px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const InformationDiv = styled.div`
@@ -60,8 +71,19 @@ const InformationDiv = styled.div`
     font-size: 24px;
   }
 
+  p {
+    margin: 0.5rem 0;
+    line-height: 1.2;
+  }
+
   @media (min-width: 768px) {
     align-items: start;
+  }
+
+  @media (max-width: 767px) {
+    display: flex; /* Use flexbox on small screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
   }
 `;
 
