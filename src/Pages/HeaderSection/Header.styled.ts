@@ -4,9 +4,7 @@ const StyledMainDiv = styled.div`
   display: flex;
   flex-direction: row;
   gap: 5vw;
-  padding-top: 7vw !important;
-  padding-bottom: 9vw !important;
-  padding: 0 7vw;
+  padding: 8vw 7vw;
   justify-content: space-between;
 
   @media (max-width: 900px) {
@@ -37,13 +35,12 @@ const ImagineDiv = styled.div`
 `;
 
 const ParaphraseDiv = styled.div`
-  font-size: 2.5vw;
+  font-size: 18px;
   padding: 2vw 0;
   text-align: justify;
-  width: 85%;
+  width: 80%;
 
   @media (max-width: 768px) {
-    font-size: 3vw;
     padding: 4vw 0;
   }
 `;
