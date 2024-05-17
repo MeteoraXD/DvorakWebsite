@@ -21,7 +21,7 @@ const TextDiv = styled.div`
 
 const ImagineDiv = styled.div`
   font-weight: 600;
-  font-size: 92px;
+  font-size: 84px;
   line-height: 1;
   width: 75%;
   .del {
@@ -35,7 +35,7 @@ const ImagineDiv = styled.div`
 `;
 
 const ParaphraseDiv = styled.div`
-  font-size: 18px;
+  font-size: 16px;
   padding: 2vw 0;
   text-align: justify;
   width: 80%;
