@@ -52,8 +52,8 @@ const Services = () => {
     { regular: Aws, colored: AwsColoredLogo },
     { regular: Pytorch, colored: PytorchColored },
     { regular: GoogleCloud, colored: GCPColored },
-    { regular: TensorFlow, colored: TensorFlowColored },
     { regular: Mongodb, colored: MongodbColored },
+    { regular: TensorFlow, colored: TensorFlowColored },
   ];
 
   return (

@@ -6,9 +6,21 @@ import {
   ParaphraseDiv,
   ExploreButton,
 } from "./Header.styled.ts";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/dvorak.svg";
+import ColorfulLogo from "../../assets/colorfunlogo.svg";
+import { useState } from "react";
 
 const HeaderDiv = () => {
+  const [isLogoHovered, setIsLogoHovered] = useState(false);
+
+  const handleLogoHover = () => {
+    setIsLogoHovered(true);
+  };
+
+  const handleLogoLeave = () => {
+    setIsLogoHovered(false);
+  };
+
   return (
     <StyledMainDiv>
       <TextDiv>
@@ -23,7 +35,11 @@ const HeaderDiv = () => {
         </ParaphraseDiv>
         <ExploreButton>Explore DI</ExploreButton>
       </TextDiv>
-      <LogoDiv src={Logo} />
+      <LogoDiv
+        src={isLogoHovered ? ColorfulLogo : Logo}
+        onMouseEnter={handleLogoHover}
+        onMouseLeave={handleLogoLeave}
+      />
     </StyledMainDiv>
   );
 };
