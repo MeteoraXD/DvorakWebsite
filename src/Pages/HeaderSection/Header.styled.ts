@@ -61,11 +61,48 @@ const ExploreButton = styled.button`
   }
 `;
 
-const LogoDiv = styled.img`
-  max-height: 40vw;
+const LogoContainer = styled.div`
+  position: relative;
+  width: 50vw;
+  height: 40vw;
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow: hidden;
 
   @media (max-width: 768px) {
-    max-height: 30vw;
+    width: 40vw;
+  }
+`;
+
+const BaseLogoStyles = `
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 1.5s ease;
+  transition-delay: 0.2s;
+`;
+
+const LogoDiv = styled.img`
+  width: 100%;
+  ${BaseLogoStyles}
+  opacity: 1;
+`;
+
+const ColoredLogoDiv = styled.img`
+  ${BaseLogoStyles}
+  opacity: 0;
+
+  ${LogoContainer}:hover & {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+
+  ${LogoContainer}:hover ~ ${LogoDiv} {
+    opacity: 0;
+    transition-delay: 0.2s;
   }
 `;
 
@@ -76,4 +113,6 @@ export {
   LogoDiv,
   ParaphraseDiv,
   ExploreButton,
+  ColoredLogoDiv,
+  LogoContainer,
 };

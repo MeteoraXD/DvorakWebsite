@@ -51,7 +51,7 @@ const BoldTitleDiv = styled.div`
 const LogoDiv = styled.div`
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 45px;
   padding: 20px;
   background-color: black;
   width: 100%;
