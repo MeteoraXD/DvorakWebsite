@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const StyledMainDiv = styled.div`
   display: flex;
@@ -46,8 +46,8 @@ const ParaphraseDiv = styled.div`
 `;
 
 const ExploreButton = styled.button`
-  width: 8vw;
-  height: 4vw;
+  width: 7vw;
+  height: 3vw;
   background-color: black;
   color: white;
   border: none;
@@ -68,41 +68,30 @@ const LogoContainer = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     width: 40vw;
   }
 `;
 
-const BaseLogoStyles = `
-  position: absolute;
-  top: 0;
-  left: 0;
+const LogoDiv = styled.div`
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transition: opacity 1.5s ease;
-  transition-delay: 0.2s;
-`;
+  position: relative;
 
-const LogoDiv = styled.img`
-  width: 100%;
-  ${BaseLogoStyles}
-  opacity: 1;
-`;
-
-const ColoredLogoDiv = styled.img`
-  ${BaseLogoStyles}
-  opacity: 0;
-
-  ${LogoContainer}:hover & {
-    opacity: 1;
-    transition-delay: 0.2s;
+  svg {
+    fill: rgb(63, 94, 251);
+    transition: fill 0s;
+    mask: url(#waterMask);
   }
 
-  ${LogoContainer}:hover ~ ${LogoDiv} {
-    opacity: 0;
-    transition-delay: 0.2s;
+  &:hover g {
+    fill: #05054d;
+    /* mask: url(#waterMask); */
+    background: linear-gradient(red, yellow);
   }
 `;
 
@@ -113,6 +102,5 @@ export {
   LogoDiv,
   ParaphraseDiv,
   ExploreButton,
-  ColoredLogoDiv,
   LogoContainer,
 };
