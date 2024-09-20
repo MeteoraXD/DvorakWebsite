@@ -13,7 +13,7 @@ import {
   MemberButtonContainer,
   MemberContainer,
   HiddenContainer,
-} from "./Team.styled"; // Import your styled components here
+} from "./Team.styled";
 import Picture from "../../assets/pfp.jpg";
 import UpArrow from "../../assets/uparrow.svg";
 import DownArrow from "../../assets/downarrow.svg";

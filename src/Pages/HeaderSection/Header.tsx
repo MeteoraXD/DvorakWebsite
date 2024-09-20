@@ -5,11 +5,9 @@ import {
   LogoDiv,
   ParaphraseDiv,
   ExploreButton,
-  ColoredLogoDiv,
   LogoContainer,
 } from "./Header.styled.ts";
-import Logo from "../../assets/dvorak.svg";
-import ColorfulLogo from "../../assets/colorfunlogo.svg";
+import AnimatedDvorakLogo from "../../assets/dvorak.tsx";
 
 const HeaderDiv = () => {
   return (
@@ -19,7 +17,7 @@ const HeaderDiv = () => {
           Imagination is the <del>limit</del>
         </ImagineDiv>
         <ParaphraseDiv>
-          We’re passionate about technology and innovation || Focus on your
+          We're passionate about technology and innovation || Focus on your
           business while we handle the tech || We use cutting-edge technologies
           and industry best practices || Our commitment ensures smooth project
           execution
@@ -27,8 +25,9 @@ const HeaderDiv = () => {
         <ExploreButton>Explore DI</ExploreButton>
       </TextDiv>
       <LogoContainer>
-        <LogoDiv src={Logo} />
-        <ColoredLogoDiv src={ColorfulLogo} />
+        <LogoDiv>
+          <AnimatedDvorakLogo />
+        </LogoDiv>
       </LogoContainer>
     </StyledMainDiv>
   );
