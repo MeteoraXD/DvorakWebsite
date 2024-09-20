@@ -93,6 +93,11 @@ const Team = () => {
               <NameDiv>Sahaz Gurung</NameDiv>
               <RoleDiv>Intern (Graphics Designer)</RoleDiv>
             </MemberDiv>
+            <MemberDiv>
+              <PhotoDiv src={Picture} />
+              <NameDiv>Sanjay Pahari</NameDiv>
+              <RoleDiv>Intern (Frontend)</RoleDiv>
+            </MemberDiv>
           </HiddenContainer>
         )}
         <ExpandButton onClick={handleExpand}>

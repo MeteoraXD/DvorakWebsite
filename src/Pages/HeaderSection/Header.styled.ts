@@ -87,14 +87,14 @@ const BaseLogoStyles = `
 
 const LogoDiv = styled.img`
   width: 100%;
-  ${BaseLogoStyles}
-  opacity: 1;
+  ${BaseLogoStyles}{
+  opacity: 1;}
 `;
 
 const ColoredLogoDiv = styled.img`
-  ${BaseLogoStyles}
-  opacity: 0;
-
+  ${BaseLogoStyles} {
+      opacity: 0;
+  }
   ${LogoContainer}:hover & {
     opacity: 1;
     transition-delay: 0.2s;

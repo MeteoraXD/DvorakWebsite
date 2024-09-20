@@ -11,7 +11,7 @@ const MainDiv = styled.div`
     flex-direction: column;
 
     gap: 20px;
-  }
+  } 
 `;
 
 const TitleDiv = styled.div`
@@ -19,7 +19,7 @@ const TitleDiv = styled.div`
   line-height: 1;
   @media (max-width: 900px) {
     width: 100%;
-    text-align: center;
+    text-align: center; 
   }
 `;
 
