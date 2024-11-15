@@ -83,13 +83,13 @@ const BaseLogoStyles = `
   transition-delay: 0.2s;
 `;
 
-const LogoDiv = styled.img`
+const LogoDiv = styled.div`
   width: 100%;
   ${BaseLogoStyles};
   opacity: 1;
 `;
 
-const ColoredLogoDiv = styled.img`
+const ColoredLogoDiv = styled.div`
   ${BaseLogoStyles};
   opacity: 0;
 

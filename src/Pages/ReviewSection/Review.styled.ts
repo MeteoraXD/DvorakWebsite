@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface StarProps {
-  filled: boolean;
+  $filled: boolean;
 }
 
 const Container = styled.div`
@@ -60,7 +60,7 @@ const Rating = styled.div`
 
 const Star = styled.span.attrs<StarProps>((props) => ({
   style: {
-    color: props.filled ? "black" : "lightgray",
+    color: props.$filled ? "black" : "lightgray",
   },
 }))`
   font-size: 36px;
