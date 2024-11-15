@@ -1,6 +1,6 @@
 import React from "react";
 
-const AnimatedDvorakLogo: React.FC = () => {
+const DvorakLogo: React.FC = () => {
   return (
     <svg
       version="1.0"
@@ -81,4 +81,4 @@ const AnimatedDvorakLogo: React.FC = () => {
   );
 };
 
-export default AnimatedDvorakLogo;
+export default DvorakLogo;

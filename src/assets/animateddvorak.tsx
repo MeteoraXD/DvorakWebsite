@@ -1,14 +1,17 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-        "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+import React from "react";
+
+        const AnimatedDvorakLogo: React.FC = () => {
+            return (
+
+
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     width="816.000000pt" height="840.000000pt" viewBox="0 0 816.000000 840.000000"
+     width="100%" height="100%" viewBox="0 0 816.000000 840.000000"
      preserveAspectRatio="xMidYMid meet">
 
     <defs>
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+            <stop offset="0%" style={{stopColor:"rgb(255,0,0)" , stopOpacity:1}}/>
+            <stop offset="100%"  style={{ stopColor: "rgb(0,0 , 255)", stopOpacity: 1 }}  />
         </linearGradient>
     </defs>
 
@@ -46,3 +49,9 @@ m945 -2092 c167 -53 261 -112 418 -263 103 -98 162 -175 217 -285 85 -170 90
 -234 726 -501 1018 -365 397 -791 614 -1339 682 -150 18 -142 18 -164 2z"/>
     </g>
 </svg>
+            );
+        };
+
+        export default AnimatedDvorakLogo;
+
+
