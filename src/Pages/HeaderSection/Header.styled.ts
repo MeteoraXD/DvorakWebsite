@@ -24,9 +24,7 @@ const ImagineDiv = styled.div`
   font-size: 84px;
   line-height: 1;
   width: 75%;
-  .del {
-    font-weight: bold;
-  }
+  
 
   @media (max-width: 900px) {
     font-size: 8vw;
@@ -87,12 +85,12 @@ const BaseLogoStyles = `
 
 const LogoDiv = styled.img`
   width: 100%;
-  ${BaseLogoStyles}
+  ${BaseLogoStyles};
   opacity: 1;
 `;
 
 const ColoredLogoDiv = styled.img`
-  ${BaseLogoStyles}
+  ${BaseLogoStyles};
   opacity: 0;
 
   ${LogoContainer}:hover & {

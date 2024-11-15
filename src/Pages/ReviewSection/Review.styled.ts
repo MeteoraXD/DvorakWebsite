@@ -58,8 +58,11 @@ const Rating = styled.div`
   margin-bottom: 0.5rem;
 `;
 
-const Star = styled.span<StarProps>`
-  color: ${(props) => (props.filled ? "black" : "lightgray")};
+const Star = styled.span.attrs<StarProps>((props) => ({
+  style: {
+    color: props.filled ? "black" : "lightgray",
+  },
+}))`
   font-size: 36px;
 `;
 
