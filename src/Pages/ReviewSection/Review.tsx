@@ -66,7 +66,7 @@ const ReviewSection = () => {
                 <Review>
                   <Rating>
                     {Array.from({ length: 5 }, (_, i) => (
-                      <Star key={i} filled={i < review.rating}>
+                      <Star key={i} $filled={i < review.rating}>
                         &#9733;
                       </Star>
                     ))}
